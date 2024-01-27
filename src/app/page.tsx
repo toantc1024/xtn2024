@@ -5,15 +5,19 @@ import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 import Info from "../components/Info";
 import Gallery from "../components/Gallery";
+import { PrimeReactProvider } from 'primereact/api';
+
 export default function Home() {
   return (
-    <main className="h-full w-full">
-      <Navbar />
-      <Intro />
-      <Hero />
-      <Info />
-      <Gallery />
-      <Footer />
-    </main>
+    <PrimeReactProvider>
+      <main className="h-full w-full">
+        <Navbar />
+        <Intro />
+        <Hero />
+        <Info />
+        <Gallery />
+        <Footer />
+      </main>
+    </PrimeReactProvider>
   );
 }
