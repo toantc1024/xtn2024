@@ -29,15 +29,15 @@ const responsiveOptions = [
 const Gallery = () => {
     const images = [
         {
-            src: "https://i.pinimg.com/564x/b0/60/79/b0607960c2924096eb9e5afe1e19e397.jpg",
-            alt: "Random image from Picsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-            title: "Random image from Picsum"
+            src: "assets/images/cong-dinh-kieng-phuoc.jpg",
+            alt: "Đình Kiểng Phước là một trong những ngôi đình được xây dựng đầu tiên ở vùng đất Gò Công. Kiến trúc đình có 05 tòa lớn nhỏ từ trước ra sau theo chức năng phân biệt, mái lợp ngói âm dương. Có thể nói, kiến trúc nghệ thuật đình Kiểng Phước không chỉ là biểu tượng của làng quê Nam bộ, mà còn là nơi nghệ thuật chạm trổ dân gian vùng Gò Công thăng hoa và tỏa sáng. Những đường nét kiến trúc, các bức chạm khắc trang trí ở đình để lại đến ngày nay còn là những câu chuyện lịch sử qua bao nhiêu thăng trầm của vùng đất Gò Công.",
+            title: "Đình Kiểng Phước"
         }
         ,
         {
-            src: "https://i.pinimg.com/564x/60/b2/6c/60b26c0c8052939d516530a706ff7b48.jpg",
+            src: "assets/images/chua-phuoc-quang.jpg",
             alt: "Random image from Picsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
-            title: "Random image from Picsum"
+            title: "Chùa Phước Quang"
         }
         ,
         {
@@ -98,15 +98,15 @@ const Gallery = () => {
     const template = (image) => {
         return (
             <div className="flex border-1 surface-border border-round m-2 text-center">
-                <div className="flex justify-center">
-                    <img src={image.src} alt={image.alt}
+                <div className="flex justify-center ">
+                    <img src={image.src} alt={image.alt} className='rounded-lg'
                         style={{ height: '300px !important', width: 'auto !important' }}
                     />
                 </div>
                 <div className='flex items-center p-6 w-full'>
                     <div>
-                        <h4 className="mb-1">{image.title}</h4>
-                        <div className="mt-0 mb-3 font-light text-sm">{image.alt}</div>
+                        <h3 className="mb-3 text-2xl">{image.title}</h3>
+                        <div className="mt-0 mb-3 font-light text-justify">{image.alt}</div>
                     </div>
                 </div>
             </div>
@@ -116,8 +116,11 @@ const Gallery = () => {
     return (
         <div>
             <div className='p-6'>
-                <h1 className='text-3xl font-bold text-center my-3'>Carousel</h1>
-                <Carousel value={images}
+                <h1 className='text-5xl pb-3 font-bold text-center my-3 bg-gradient-to-b from-red-600 via-yellow-500 to-yellow-400 text-transparent bg-clip-text'>
+                    Địa danh
+                </h1>
+                <Carousel value={images} 
+                    // numVisible={3} numScroll={1}
                     // responsiveOptions={responsiveOptions}
                     itemTemplate={template}
                     autoplayInterval={3000}
@@ -126,7 +129,7 @@ const Gallery = () => {
             </div>
 
             <div className='p-8'>
-                <h1 className='text-3xl font-bold text-center my-3'>Image Gallery</h1>
+                <h1 className='text-5xl pb-3 font-bold text-center my-3 bg-gradient-to-b from-red-600 via-yellow-500 to-yellow-400 text-transparent bg-clip-text '>Image Gallery</h1>
                 <ImageGallery items={album} />
             </div>
         </div>
