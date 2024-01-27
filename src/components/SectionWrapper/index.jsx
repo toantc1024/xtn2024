@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const index = ({children, background}) => {
-  return (
-    <div className={`${background} min-h-screen w-full flex items-center justify-center`}>{children}</div>
-  )
-}
+const index = ({ children, style }) => {
+  return <div className={`${style} min-h-screen w-full `}>{children}</div>;
+};
 
-export default index
+export default index;
