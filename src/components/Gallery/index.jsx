@@ -1,17 +1,12 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 import React from 'react'
 // import Carousel from './Carousel'   
 import { Carousel } from 'primereact/carousel';
 // import { Galleria } from 'primereact/galleria';
-
 import Image from 'next/image';
 
 const responsiveOptions = [
-    {
-        breakpoint: '1400px',
-        numVisible: 2,
-        numScroll: 1
-    },
     {
         breakpoint: '1199px',
         numVisible: 3,
@@ -74,7 +69,7 @@ const Gallery = () => {
             title: "Random image from Picsum"
         },
         {
-            src: "https://i.pinimg.com/564x/c2/d3/ea/c2d3ea4e7db59e78d0af0125bcd570aa.jpg",
+            src: "https://i.pinimg.com/564x/e9/2f/2f/e92f2f592f843fca041cc6e362091492.jpg",
             alt: "Random image from Picsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
             title: "Random image from Picsum"
         },
@@ -82,48 +77,30 @@ const Gallery = () => {
 
     const template = (image) => {
         return (
-            <div className="border-1 surface-border border-round m-2 text-center py-5 px-3 w-fit ">
-                <div className="mb-3 flex justify-center">
-                    <Image
-                        src={image.src}
-                        alt={image.alt}
-                        width={220}
-                        height={220}
-                        style={{ height: '400px !important', width: 'auto !important' }}
-                    // blurDataURL="data:..." automatically provided
-                    // placeholder="blur" // Optional blur-up while loading
+            <div className="flex border-1 surface-border border-round m-2 text-center">
+                <div className="flex justify-center">
+                    <img src={image.src} alt={image.alt}
+                        style={{ height: '300px !important', width: 'auto !important' }}
                     />
                 </div>
-                <div>
-                    <h4 className="mb-1">{image.title}</h4>
-                    <div className="mt-0 mb-3 font-light text-sm">{image.alt}</div>
-                    {/* <Tag value={product.inventoryStatus} severity={getSeverity(product)}></Tag> */}
-                    {/* <div className="mt-5 flex flex-wrap gap-2 justify-content-center">
-                        <Button icon="pi pi-search" className="p-button p-button-rounded" />
-                        <Button icon="pi pi-star-fill" className="p-button-success p-button-rounded" />
-                    </div> */}
+                <div className='flex items-center p-6 w-full'>
+                    <div>
+                        <h4 className="mb-1">{image.title}</h4>
+                        <div className="mt-0 mb-3 font-light text-sm">{image.alt}</div>
+                    </div>
                 </div>
             </div>
         );
     };
 
     return (
-        <div className=' '>
-            <Carousel value={images} numScroll={1} numVisible={3}
-                responsiveOptions={responsiveOptions}
+        <div className='p-6'>
+            <Carousel value={images}
+                // responsiveOptions={responsiveOptions}
                 itemTemplate={template}
                 autoplayInterval={3000}
                 circular={true}
             />
-            {/* <div className="">
-                <Galleria value={images} responsiveOptions={responsiveOptions} numVisible={5}
-                    item={itemTemplate} 
-                    caption={caption} 
-                    showThumbnails={true} showItemNavigators
-                    thumbnail={thumbnailTemplate} 
-                    style={{ maxHeight: '500px' }} 
-                />
-            </div> */}
         </div>
     )
 }
