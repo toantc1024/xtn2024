@@ -43,42 +43,34 @@ const Hero = () => {
       <SectionWrapper
         info={{ id: "about" }}
         style={
-          "bg-gradient-to-b from-orange-500  to-orange-400 flex flex-col  py-8  gap-4"
+          "relative bg-gradient-to-b from-orange-500  to-orange-400 flex py-8 justify-center gap-4"
         }
       >
-        <h2 className="text-4xl md:text-6xl text-white text-center">
-          Giới thiệu
-        </h2>
-        <div className="flex">
-          <div className="w-full h-full flex flex-col gap-12 items-center justify-center">
-            <div className="w-full flex justify-center items-center gap-4  px-8">
-              <span className="text-xl md:text-2xl  text-orange-400 p-4 rounded-full bg-white shadow-xl">
-                <FaLocationDot />
-              </span>
-              <span className="text-lg bg-white rounded-lg shadow-lg text-gray-600 md:text-2xl px-4 py-2">
-                Xã Kiểng Phước, huyện Gò Công Đông, tỉnh Tiền Giang
-              </span>
-            </div>
-
-            <div className="flex flex-wrap gap-4 px-4 md:px-24">
-              {data.map((item, index) => {
-                return <Row {...item} key={index}></Row>;
-              })}
-            </div>
+        <div
+          className="w-full h-screen mt-24 md:mt-48 bg-[rgba(255,255,255,.1)] border-[1px] border-[rgba(255,255,255,.4)] absolute top-0 left-0 z-[0]"
+          style={{ borderRadius: "5em" }}
+        ></div>
+        <div className="w-full h-full flex flex-col gap-12 items-center justify-center z-[1]">
+          <h2 className="text-4xl md:text-8xl text-white">Giới thiệu</h2>
+          <div className="w-full flex justify-center items-center gap-4  px-8">
+            <span className="text-xl md:text-2xl  text-orange-400 p-4 rounded-full bg-white shadow-lg">
+              <FaLocationDot />
+            </span>
+            <span className="text-lg bg-white rounded-lg shadow-lg text-gray-600 md:text-2xl px-4 py-2">
+              Xã Kiểng Phước, huyện Gò Công Đông, tỉnh Tiền Giang
+            </span>
           </div>
 
-          <Image
-            src={backgroundImage.src}
-            alt="Background Image"
-            width={500}
-            height={500}
-          />
+          <div className="flex flex-wrap gap-4 px-4 md:px-24">
+            {data.map((item, index) => {
+              return <Row {...item} key={index}></Row>;
+            })}
+          </div>
         </div>
       </SectionWrapper>
       <div
-        className="relative"
+        className="relative z-[0]"
         style={{
-          width: "100vw",
           height: "100vh",
           display: "flex",
           alignItems: "center",
