@@ -3,8 +3,10 @@
 import React from 'react'
 // import Carousel from './Carousel'   
 import { Carousel } from 'primereact/carousel';
-// import { Galleria } from 'primereact/galleria';
 import Image from 'next/image';
+import ImageGallery from "react-image-gallery";
+// import stylesheet if you're not already using CSS @import
+import "react-image-gallery/styles/css/image-gallery.css";
 
 const responsiveOptions = [
     {
@@ -75,6 +77,24 @@ const Gallery = () => {
         },
     ]
 
+    const album = [
+        {
+            original: "https://picsum.photos/id/1018/1000/600/",
+            thumbnail: "https://picsum.photos/id/1018/250/150/",
+            description: "Random image from Picsum",
+        },
+        {
+            original: "https://picsum.photos/id/1015/1000/600/",
+            thumbnail: "https://picsum.photos/id/1015/250/150/",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        },
+        {
+            original: "https://picsum.photos/id/1019/1000/600/",
+            thumbnail: "https://picsum.photos/id/1019/250/150/",
+            description: "Lorem ipsum dolor sit amet, random image from Picsum"
+        },
+    ];
+
     const template = (image) => {
         return (
             <div className="flex border-1 surface-border border-round m-2 text-center">
@@ -94,13 +114,21 @@ const Gallery = () => {
     };
 
     return (
-        <div className='p-6'>
-            <Carousel value={images}
-                // responsiveOptions={responsiveOptions}
-                itemTemplate={template}
-                autoplayInterval={3000}
-                circular={true}
-            />
+        <div>
+            <div className='p-6'>
+                <h1 className='text-3xl font-bold text-center my-3'>Carousel</h1>
+                <Carousel value={images}
+                    // responsiveOptions={responsiveOptions}
+                    itemTemplate={template}
+                    autoplayInterval={3000}
+                    circular={true}
+                />
+            </div>
+
+            <div className='p-8'>
+                <h1 className='text-3xl font-bold text-center my-3'>Image Gallery</h1>
+                <ImageGallery items={album} />
+            </div>
         </div>
     )
 }
