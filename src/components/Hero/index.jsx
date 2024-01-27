@@ -2,58 +2,77 @@ import React from "react";
 import backgroundImage from "../assets/static/images/z5070957363291_7ebe881967e5d7ed33bb19bbe5878322.jpg";
 import Image from "next/image";
 import SectionWrapper from "../SectionWrapper";
-import { FaInfo, FaLocationDot } from "react-icons/fa6";
+import { FaInfo, FaLeaf, FaLocationDot } from "react-icons/fa6";
 import { FaMapMarkedAlt } from "react-icons/fa";
-function getRandomColor() {
-  const colors = ["red", "orange", "yellow", "emerald"];
-  const randomIndex = Math.floor(Math.random() * colors.length);
-  return `text-${colors[randomIndex]}-400`;
-}
-const Row = () => {
+const Row = ({ icon, title, content }) => {
   return (
-    <div className="bg-white rounded-2xl shadow-lg  flex flex-col md:flex-row items-center py-8 px-8 justify-center gap-4">
+    <div className="bg-white rounded-2xl shadow-lg w-full  flex flex-col md:flex-row items-center py-8 px-8 justify-between gap-4">
       <div
-        className={`flex p-8 items-center justify-start flex-col md:justify-center gap-4 ${getRandomColor()} text-xl md:text-4xl md:text-6xl rounded-lg`}
+        className={`flex p-2 md:p-6 flex-row md:flex-col items-center justify-start  md:justify-center gap-4 text-xl md:text-4xl md:text-6xl  md:w-[5em] rounded-lg`}
       >
-        <FaMapMarkedAlt />
-        <span className="text-sm md:text-xl text-slate-900">Vị trí địa lý</span>
+        {icon}
+        <span className="text-sm md:text-xl text-slate-900">{title}</span>
       </div>
       <div className="flex flex-col gap-4">
         <div className="text-sm md:text-xl text-slate-900 font-light ">
-          Tân Phú là một xã thuộc huyện Thanh Bình, tỉnh Đồng Tháp, Việt Nam. Xã
-          Tân Phú có 3.308 hécta diện tích tự nhiên với 7.861 người. Địa giới xã
-          Tân Phú ở phía đông giáp xã Bình Thành; phía tây giáp xã Tân Thạnh và
-          xã Phú Lợi; phía nam giáp thị trấn Thanh Bình; phía bắc giáp xã Tân
-          Mỹ.
+          {content}
         </div>
       </div>
     </div>
   );
 };
 
+const data = [
+  {
+    icon: <FaMapMarkedAlt className="text-orange-400" />,
+    title: <span className="text-orange-400">Vị trí địa lý</span>,
+    content:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad amet architecto praesentium saepe est perspiciatis repudiandae ipsam iure similique? Optio totam praesentium nemo mollitia illum eius aliquam quis beatae ea?",
+  },
+  {
+    icon: <FaLeaf className="text-emerald-400" />,
+    title: <span className="text-emerald-400">Điều kiện tự nhiên</span>,
+    content:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad amet architecto praesentium saepe est perspiciatis repudiandae ipsam iure similique? Optio totam praesentium nemo mollitia illum eius aliquam quis beatae ea?",
+  },
+];
+
 const Hero = () => {
   return (
     <>
       <SectionWrapper
+        info={{ id: "about" }}
         style={
-          "bg-gradient-to-b from-orange-500  to-orange-400 flex py-8 justify-center gap-4"
+          "bg-gradient-to-b from-orange-500  to-orange-400 flex flex-col  py-8  gap-4"
         }
       >
-        <div className="w-full h-full flex flex-col gap-12 items-center justify-center">
-          <div className="w-full flex justify-center items-center gap-4  px-8">
-            <span className="text-xl md:text-2xl  text-orange-400 p-4 rounded-full bg-white">
-              <FaLocationDot />
-            </span>
-            <span className="text-lg bg-white rounded-lg shadow-lg text-gray-600 md:text-2xl px-4 py-2">
-              Xã Kiểng Phước, huyện Gò Công Đông, tỉnh Tiền Giang
-            </span>
+        <h2 className="text-4xl md:text-6xl text-white text-center">
+          Giới thiệu
+        </h2>
+        <div className="flex">
+          <div className="w-full h-full flex flex-col gap-12 items-center justify-center">
+            <div className="w-full flex justify-center items-center gap-4  px-8">
+              <span className="text-xl md:text-2xl  text-orange-400 p-4 rounded-full bg-white shadow-xl">
+                <FaLocationDot />
+              </span>
+              <span className="text-lg bg-white rounded-lg shadow-lg text-gray-600 md:text-2xl px-4 py-2">
+                Xã Kiểng Phước, huyện Gò Công Đông, tỉnh Tiền Giang
+              </span>
+            </div>
+
+            <div className="flex flex-wrap gap-4 px-4 md:px-24">
+              {data.map((item, index) => {
+                return <Row {...item} key={index}></Row>;
+              })}
+            </div>
           </div>
 
-          <div className="flex flex-wrap gap-4 px-4 md:px-24">
-            {[...new Array(4)].map((item, index) => {
-              return <Row key={index}></Row>;
-            })}
-          </div>
+          <Image
+            src={backgroundImage.src}
+            alt="Background Image"
+            width={500}
+            height={500}
+          />
         </div>
       </SectionWrapper>
       <div
