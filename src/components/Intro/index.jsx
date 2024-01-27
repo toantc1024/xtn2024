@@ -13,7 +13,7 @@ const Intro = () => {
           </div>
 
           <div>
-            <p className="text-2xl md:text-2xl  m-2">
+            <p className="text-xl md:text-2xl  m-2">
               Quê tôi ở tận miền tây
               <br />
               Mênh mông đồng lúa cò bay đầy trời

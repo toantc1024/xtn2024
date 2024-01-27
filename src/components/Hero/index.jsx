@@ -48,7 +48,7 @@ const Hero = () => {
       >
         <div
           className="w-full h-screen mt-24 md:mt-48 bg-[rgba(255,255,255,.1)] border-[1px] border-[rgba(255,255,255,.4)] absolute top-0 left-0 z-[0]"
-          style={{ borderRadius: "5em" }}
+          style={{ borderRadius: "2.5em" }}
         ></div>
         <div className="w-full h-full flex flex-col gap-12 items-center justify-center z-[1]">
           <h2 className="text-4xl md:text-8xl text-white">Giới thiệu</h2>
