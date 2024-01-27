@@ -6,7 +6,7 @@ import Image2 from '../assets/static/images/z5070957363291_7ebe881967e5d7ed33bb1
 const InfoItem = ({content, isReversed}) => {
     return <div className={` ${isReversed ? "flex-row-reverse" : ""} rounded-lg px-24 py-2 bg-emerald-400 m-4 rounded-lg flex items-center justify-between gap-4`}>
         <div className="bg-red-400">
-            <Image src={Image2} width={800} height={400}/>
+            <Image alt="Ảnh giới thiệu" src={Image2} width={800} height={400}/>
         </div>
         <div>
             <h2 className='text-8xl'>
@@ -26,7 +26,7 @@ const Info = () => {
             </h2>
         </div>
         <div className='h-full w-full px-24 flex items-center justify-center gap-8 flex-col'>
-            {[...new Array(5)].map((_, i) => <InfoItem content={i} isReversed={i%2==0}/>)
+            {[...new Array(5)].map((_, i) => <InfoItem key={i} content={i} isReversed={i%2==0}/>)
 
             }
         </div>
