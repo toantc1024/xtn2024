@@ -1,4 +1,13 @@
+"use client";
 import React from "react";
+
+// Script to scroll to an element (by Id) and smooth for me
+const scrollToSection = (id) => {
+  document.getElementById(id)?.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+};
 
 const Navbar = () => {
   return (
@@ -10,7 +19,9 @@ const Navbar = () => {
       <div className="text-sm md:text-2xl font-bold text-yellow-400 flex gap-2 justify-between">
         <ul className="flex gap-4 items-center">
           <li>
-            <a href="#">Giới thiệu</a>
+            <a onClick={() => scrollToSection("about")} href="#about">
+              Giới thiệu
+            </a>
           </li>
           <li>
             <a href="#">Albumn</a>
