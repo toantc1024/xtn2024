@@ -23,7 +23,8 @@ const Intro = () => {
           </div>
         </div>
 
-        <div className="w-[500px] h-[500px] rounded-full bg-red-500"></div>
+        <div className="w-[500px] h-[500px] rounded-full bg-red-500">
+        </div>
       </div>
     </SectionWrapper>
   );
