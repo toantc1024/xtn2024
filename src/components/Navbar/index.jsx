@@ -11,12 +11,12 @@ const scrollToSection = (id) => {
 
 const Navbar = () => {
   return (
-    <div className="bg-red-500 p-2  md:py-4 md:px-8 flex justify-between">
-      <div className="p-4 font-extrabold text-sm md:text-4xl text-yellow-400 ">
+    <div className="bg-orange-500 p-2  md:py-4 md:px-8 flex justify-between">
+      <div className="p-4 font-extrabold text-sm md:text-4xl text-white ">
         Xã Kiểng Phước
       </div>
 
-      <div className="text-sm md:text-2xl font-bold text-yellow-400 flex gap-2 justify-between">
+      <div className="text-sm md:text-2xl font-bold text-white flex gap-2 justify-between">
         <ul className="flex gap-4 items-center">
           <li>
             <a onClick={() => scrollToSection("about")} href="#about">
