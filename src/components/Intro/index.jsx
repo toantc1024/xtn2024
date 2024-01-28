@@ -4,7 +4,10 @@ import BG from "../assets/static/images/36_big.jpg";
 import Image from "next/image";
 const Intro = () => {
   return (
-    <SectionWrapper style={"flex items-center justify-center bg-white"}>
+    <SectionWrapper
+      style={"flex items-center justify-center bg-white"}
+      info={{ id: "hero" }}
+    >
       <div className="w-full h-full flex items-center flex-col xl:flex-row  justify-center gap-12">
         <div className="bg-gradient-to-b from-red-600 via-yellow-500 to-yellow-400 inline-block text-transparent bg-clip-text flex flex-col text-4xl md:text-6xl py-8 gap-10 text-center">
           <div>
