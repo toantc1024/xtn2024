@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;400;600;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Water+Brush&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,8 +11,32 @@ html {
   scroll-behavior: smooth;
 }
 
-
 .image-gallery-slide .image-gallery-description {
-    left: 50% !important;
-    transform: translateX(-50%) !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+#poem {
+  /* font-family: "Water Brush", cursive !important; */
+  /* font-weight: 400; */
+  /* font-style: normal; */
+}
+
+* {
+  scroll-margin: 100px;
+}
+
+.nav_link {
+  position: relative;
+  overflow: hidden;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav_link.active {
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 115, 0);
+  border-radius: 0.5em;
+  transition: all 0.3s ease;
 }

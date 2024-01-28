@@ -1,12 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
-// import Carousel from './Carousel'
 import { Carousel } from "primereact/carousel";
 import Image from "next/image";
 import ImageGallery from "react-image-gallery";
-// import stylesheet if you're not already using CSS @import
+import SectionWrapper from "../SectionWrapper";
+
 import "react-image-gallery/styles/css/image-gallery.css";
+import { FaImage } from "react-icons/fa6";
 
 const responsiveOptions = [
   {
@@ -115,14 +116,26 @@ const Gallery = () => {
   };
 
   return (
-    <div>
-      <div className="p-8">
-        <h1 className="text-5xl pb-3 font-bold text-center my-3 bg-gradient-to-b from-red-600 via-yellow-500 to-yellow-400 text-transparent bg-clip-text ">
-          Image Gallery
-        </h1>
+    <SectionWrapper
+      info={{ id: "gallery" }}
+      style={
+        "relative bg-gradient-to-b from-orange-500  to-orange-400 flex py-8 justify-center gap-4"
+      }
+    >
+      <div className="w-full h-full flex flex-col gap-12 items-center justify-center z-[1]">
+        <h2 className="text-4xl md:text-8xl text-white">Hình ảnh</h2>
+        <div className="w-full flex justify-center items-center gap-4  px-8">
+          <span className="text-xl md:text-2xl  text-orange-400 p-4 rounded-full bg-white shadow-lg">
+            <FaImage />
+          </span>
+          <span className="text-lg bg-white rounded-lg shadow-lg text-orange-500 md:text-2xl px-4 py-2">
+            Danh lam, thắng cảnh
+          </span>
+        </div>
+
         <ImageGallery items={album} />
       </div>
-    </div>
+    </SectionWrapper>
   );
 };
 
