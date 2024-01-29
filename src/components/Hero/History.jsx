@@ -52,13 +52,15 @@ const Section = ({ image, title, content, date, direction, icon }) => {
                     </p>
                     <p class="text-gray-700 dark:text-gray-500">{content}</p>
                   </div>
-                  <div className="w-full max-h-[250px] flex bg-red-400 py-4">
-                    <Image
-                      src={image}
-                      alt="s"
-                      style={{ width: "100%", objectFit: "cover" }}
-                    />
-                  </div>
+                  {image && (
+                    <div className="w-full max-h-[250px] flex  py-4">
+                      <Image
+                        src={image}
+                        alt="s"
+                        style={{ width: "100%", objectFit: "cover" }}
+                      />
+                    </div>
+                  )}{" "}
                 </div>
               </div>
             </div>
@@ -73,20 +75,47 @@ const Section = ({ image, title, content, date, direction, icon }) => {
 };
 const data = [
   {
-    image: imgg,
-    title: "Đất nước Việt Nam",
-    icon: <FaLocationDot />,
+    // image: imgg,
+    title:
+      "CHI BỘ RA ĐỜI LÃNH ĐẠO NHÂN DÂN ĐẤU TRANH CHÍNH QUYỀN VỀ TAY NHÂN DÂN",
+    icon: <FaNumber />,
     content:
       "Việt Nam, tên chính thức là Cộng hòa Xã hội chủ nghĩa Việt Nam, là một quốc gia nằm ở phía đông bán đảo Đông Dương thuộc khu vực Đông Nam Á.",
-    date: "2 tháng 9 1945",
+    date: "Mốc 1930-1945",
   },
   {
-    image: imgg,
-    title: "Đất nước Việt Nam",
+    // image: imgg,
+    title: "CHI BỘ LÃNH ĐẠO NHÂN DÂN KHÁNG CHIẾN CHỐNG PHÁP LẦN 2",
     icon: <FaLocationDot />,
     content:
       "Việt Nam, tên chính thức là Cộng hòa Xã hội chủ nghĩa Việt Nam, là một quốc gia nằm ở phía đông bán đảo Đông Dương thuộc khu vực Đông Nam Á.",
-    date: "2/9 1945",
+    date: "Mốc 1945-1954",
+  },
+
+  {
+    // image: imgg,
+    title: "CHI BỘ LÃNH ĐẠO NHÂN DÂN THAM GIA KHÁNG CHIẾN CHỐNG MỸ CỨU NƯỚC",
+    icon: <FaLocationDot />,
+    content:
+      "Việt Nam, tên chính thức là Cộng hòa Xã hội chủ nghĩa Việt Nam, là một quốc gia nằm ở phía đông bán đảo Đông Dương thuộc khu vực Đông Nam Á.",
+    date: "Mốc 1954-1975",
+  },
+  {
+    // image: imgg,
+    title:
+      "NỖ LỰC KHÔI PHỤC SẢN XUẤT PHÁT TRIỂN KINH TẾ - XÃ HỘI, THAM GIA CHIẾN ĐẤU  BẢO VỆ TỔ QUỐC",
+    icon: <FaLocationDot />,
+    content:
+      "Việt Nam, tên chính thức là Cộng hòa Xã hội chủ nghĩa Việt Nam, là một quốc gia nằm ở phía đông bán đảo Đông Dương thuộc khu vực Đông Nam Á.",
+    date: "Mốc 1975-1990",
+  },
+  {
+    // image: imgg,
+    title: "ĐỔI MỚI TOÀN DIỆN - TIẾN LÊN CÔNG NGHIỆP HÓA - HIỆN ĐẠI HÓA",
+    icon: <FaLocationDot />,
+    content:
+      "Việt Nam, tên chính thức là Cộng hòa Xã hội chủ nghĩa Việt Nam, là một quốc gia nằm ở phía đông bán đảo Đông Dương thuộc khu vực Đông Nam Á.",
+    date: "Mốc 1990-2005",
   },
 ];
 
