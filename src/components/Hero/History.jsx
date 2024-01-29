@@ -85,16 +85,16 @@ const data = [
     title:
       "CHI BỘ RA ĐỜI LÃNH ĐẠO NHÂN DÂN ĐẤU TRANH CHÍNH QUYỀN VỀ TAY NHÂN DÂN",
     icon: <PiNewspaper />,
-    content:
-      "Việt Nam, tên chính thức là Cộng hòa Xã hội chủ nghĩa Việt Nam, là một quốc gia nằm ở phía đông bán đảo Đông Dương thuộc khu vực Đông Nam Á.",
-    date: "Mốc 1930-1945",
+    content: `Trước cách mạng tháng 8 năm 1945, Kiểng Phước thuộc tổng Hòa Lạc, quận Gò Công, tỉnh Định Tường.
+      Chính sách khai thác thuộc địa của thực dân Pháp làm cho nền kinh tế ở đây trở nên kiệt quệ. Sự bóc lột của thực dân chồng lên ách cai trị của quan lại, cường hào làm dấy lên tinh thần cách mạng của người dân nơi đây. 
+      Năm 1927, tỉnh hội "Việt Nam thanh niên cách mạng đồng chí hội" của tỉnh Gò Công ra đời, đẩy mạng cách hoạt động tuyên truyền kết nạp hội viên, hướng dẫn quần chúng để đấu tranh mở rộng ảnh hưởng,... nhanh chóng lan đến Kiển Phước. Tháng 8 năm 1945 tại Kiểng Phước nhà nhà đua nhau chuẩn bị cách mạng. Đổi tên tỉnh Gò Công thành tỉnh Trương Công Định, lấy cờ Việt Minh làm cờ lệnh. Ngày 22/8/1945, vào 12 giờ trưa lá cờ đỏ sao vàng chính thức được kéo lên nóc kho bạc.`,
   },
   {
     // image: imgg,
     title: "CHI BỘ LÃNH ĐẠO NHÂN DÂN KHÁNG CHIẾN CHỐNG PHÁP LẦN 2",
     icon: <FaLocationDot />,
     content:
-      "Việt Nam, tên chính thức là Cộng hòa Xã hội chủ nghĩa Việt Nam, là một quốc gia nằm ở phía đông bán đảo Đông Dương thuộc khu vực Đông Nam Á.",
+      "Ngày 20/12/1963, thuộc quận Châu Thành, tỉnh Gò Công . Ngày  6/5/1965, thuộc quận Hòa Tân tỉnh Gò Công. Trong gần 150 ngày làm chủ quê hương của mình, Ủy ban dân tộc giải phóng lâm thời đã chuyển lên thành Ủy ban nhân dân cách mạng rồi sau đó chuyển thành Ủy ban kháng chiến hành chánh hoạt động theo sự chỉ đạo của cấp trên đem lại những ý nghĩa thiết thực cho người dân tuy nhiên vẫn phải đối mặt với nhiều cam go thử thách. Trong thời gian kháng chiên chống Pháp tái chiếm xã Kiểng Phước vẫn luôn đẩy mạnh các hoạt động cách mạng trong đó có tổ chức bầu cử quốc hội của nước Việt Nam dân chủ cộng hòa khóa I thực hiện chủ trương lấy nông thôn bao vây thành thị tạo ra phong trào tăng gia sản xuất làm hậu phương cho kháng chiến. ",
     date: "Mốc 1945-1954",
   },
 
@@ -102,8 +102,9 @@ const data = [
     // image: imgg,
     title: "CHI BỘ LÃNH ĐẠO NHÂN DÂN THAM GIA KHÁNG CHIẾN CHỐNG MỸ CỨU NƯỚC",
     icon: <FaLocationDot />,
-    content:
-      "Việt Nam, tên chính thức là Cộng hòa Xã hội chủ nghĩa Việt Nam, là một quốc gia nằm ở phía đông bán đảo Đông Dương thuộc khu vực Đông Nam Á.",
+    content: `Giai đoạn này, chi bộ ở Kiểng Phước đã có nhiều chủ trương chống lại các chính sách nhầm đè bẹp tinh thần quần chúng làm quần chúng mất niềm tin vào cách mạng.
+      Thực hiện Nghị quyết 15 của Trung ương và cuộc khởi nghĩa Đồng Khởi, các ấp dựa lưng vào nhau tạo thành một vùng giải phóng liên hoàn rộng lớn. Trước những cuộc càng quét của quân địch, nhân dân Kiểng Phước vẫn luôn vững lòng tin vào cách mạng, vào ngày Kiểng Phước được giải phóng. Các cuộc đấu tranh chính trị là nền tảng chống lại ách cai trị hay các chiến dịch chiến tranh xâm lược của chế độ thực dân. Tháng 7/1967, Kiểng Phước có nhiều bước chuyển biến tích cực trước sự thành lập của phân ban Tỉnh ủy Gò Công. 
+      `,
     date: "Mốc 1954-1975",
   },
   {
@@ -112,7 +113,7 @@ const data = [
       "NỖ LỰC KHÔI PHỤC SẢN XUẤT PHÁT TRIỂN KINH TẾ - XÃ HỘI, THAM GIA CHIẾN ĐẤU  BẢO VỆ TỔ QUỐC",
     icon: <FaLocationDot />,
     content:
-      "Việt Nam, tên chính thức là Cộng hòa Xã hội chủ nghĩa Việt Nam, là một quốc gia nằm ở phía đông bán đảo Đông Dương thuộc khu vực Đông Nam Á.",
+      "Sau ngày toàn thắng 30/4/1975, nhân dân Kiểng Phước đẩy mạng tăng gia sản xuất ổn định cuộc sống bỏ qua những khó khăn, thiên tai luôn đoàn kết hỗ trợ lẫn nhau. Từng bước mở rộng các cơ sở phúc lợi nhân dân như trường học trạm xá,... phục hồi nghề khai thác đánh bắt và nuôi trồng thủy sản. Từ 1979, Kiểng Phước nôn nóng đẩy nhanh phong trào hợp tác hóa nông nghiệp từ hình thức vần đổi công, đội đoàn kết sản xuất lên tập đoàn sản xuát và hợp tác xã. Giai đoạn này, Kiểng Phước có nhiều chuyển biến theo hướng tích cực nổi bật là khả năng sản xuất lương thực, quản lí chặt chẽ nạn lùi, lậu.",
     date: "Mốc 1975-1990",
   },
   {
@@ -120,7 +121,7 @@ const data = [
     title: "ĐỔI MỚI TOÀN DIỆN - TIẾN LÊN CÔNG NGHIỆP HÓA - HIỆN ĐẠI HÓA",
     icon: <FaLocationDot />,
     content:
-      "Việt Nam, tên chính thức là Cộng hòa Xã hội chủ nghĩa Việt Nam, là một quốc gia nằm ở phía đông bán đảo Đông Dương thuộc khu vực Đông Nam Á.",
+      "Với quyết tâm xây dựng Đảng, xã Kiểng Phước đã vạch ra 3 vùng kinh tế trọng điểm là vùng nội địa vùng, vùng ven đê và vùng nuôi trồng khai thác đánh bắt thủy sản. Bước qua giai đoạn 5 năm, đời sống nhân dân đã có nhiều sự cải thiện. Kiểng Phước tiến hành đại hội lần thứ IX vào tháng 10 năm 2000, qua đó xác định đường lối định ra chiến lược phát triển trong 2 thập kỷ đầu thế kỷ 21 là tiếp tục khắc phục khó khăn vượt qua thử thách. ",
     date: "Mốc 1990-2005",
   },
 ];

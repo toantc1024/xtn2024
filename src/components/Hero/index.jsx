@@ -68,7 +68,7 @@ const Hero = () => {
             {[
               {
                 key: "Ấp",
-                value: "14",
+                value: "12",
               },
               {
                 key: "diện tích héc ta",
