@@ -34,19 +34,23 @@ const Section = ({ image, title, content, date, direction, icon }) => {
               <div class="relative z-20 ">
                 <div class="flex flex-wrap items-center">
                   <div class="p-4 md:w-1/4 ">
-                    {date
-                      ?.split(" ")
-                      .map((item, index) =>
-                        index % 2 == 0 ? (
-                          <span class="text-lg text-gray-700 dark:text-gray-400">
-                            {item}
-                          </span>
-                        ) : (
-                          <p class="text-2xl font-bold text-gray-700 dark:text-gray-400 text-bold">
-                            {item}
-                          </p>
-                        )
-                      )}
+                    {date?.split(" ").map((item, index) =>
+                      index % 2 == 0 ? (
+                        <span
+                          class="text-lg text-gray-700 dark:text-gray-400"
+                          key={index}
+                        >
+                          {item}
+                        </span>
+                      ) : (
+                        <p
+                          class="text-2xl font-bold text-gray-700 dark:text-gray-400 text-bold"
+                          key={index}
+                        >
+                          {item}
+                        </p>
+                      )
+                    )}
                   </div>
                   <div class="flex-1 p-4 pr-4 border-l  border-gray-300 dark:border-gray-700">
                     <p class="mb-2 text-xl font-bold text-gray-600 dark:text-gray-400">

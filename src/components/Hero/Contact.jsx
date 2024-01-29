@@ -66,9 +66,12 @@ const Contact = () => {
                     content: "Thứ 2 - Thứ 6",
                     icon: <FaClock />,
                   },
-                ].map(({ title, description, content, icon }) => {
+                ].map(({ title, description, content, icon }, index) => {
                   return (
-                    <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full lg:px-6 xl:w-6/12">
+                    <div
+                      key={index}
+                      class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full lg:px-6 xl:w-6/12"
+                    >
                       <div class="flex items-start">
                         <div class="shrink-0">
                           <div class="inline-block rounded-md bg-orange-200 p-4 text-primary">

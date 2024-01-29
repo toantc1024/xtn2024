@@ -46,10 +46,6 @@ const Hero = () => {
           "relative bg-gradient-to-b from-orange-500  to-orange-400 flex py-8 justify-center gap-4"
         }
       >
-        {/* <div
-          className=" w-full h-full md:mt-48 px-12 bg-[rgba(255,255,255,.1)] border-[1px] border-[rgba(255,255,255,.4)] absolute z-[0]"
-          style={{ borderRadius: ".5em" }}
-        ></div> */}
         <div className="w-full h-full flex flex-col gap-12 items-center justify-center z-[1]">
           <h2 className="text-4xl md:text-8xl text-white">Thông tin</h2>
 
@@ -76,15 +72,18 @@ const Hero = () => {
               },
               {
                 key: "diện tích héc ta",
-                value: "11",
+                value: " 4.038,74",
               },
               {
-                key: "người dân",
-                value: "11",
+                key: "người dân (năm 2010)",
+                value: "15.384",
               },
-            ].map(({ key, value, unit }) => {
+            ].map(({ key, value, unit }, index) => {
               return (
-                <div className="flex font-light justify-center items-center gap-2 text-2xl md:text-4xl py-8 px-4 flex-col w-full text-white bg-[rgba(255,255,255,.4)] border-[1px] border-[rgba(255,255,255,.7)] rounded-2xl hover:bg-white hover:text-orange-600">
+                <div
+                  key={index}
+                  className="flex font-light justify-center items-center gap-2 text-2xl md:text-4xl py-8 px-4 flex-col w-full text-white bg-[rgba(255,255,255,.4)] border-[1px] border-[rgba(255,255,255,.7)] rounded-2xl hover:bg-white hover:text-orange-600"
+                >
                   <p className="flex gap-1 font-bold ">{value}</p>
                   <h2>{key}</h2>
                 </div>

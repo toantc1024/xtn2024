@@ -9,7 +9,7 @@ import image8 from "./image_8.jpg";
 import image9 from "./image_9.jpg";
 import image10 from "./image_10.jpg";
 
-export default [
+const places = [
   image1,
   image2,
   image3,
@@ -22,3 +22,5 @@ export default [
 
   image10,
 ];
+
+export default places;

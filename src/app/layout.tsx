@@ -5,8 +5,10 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "XÃ KIỂNG PHƯỚC - Vùng đất anh hùng",
-  description: "XÃ KIỂNG PHƯỚC - Vùng đất anh hùng",
+  title: "Xã Kiểng Phước",
+
+  description: "Vùng đất anh hùng.",
+  metadataBase: new URL("https://next-learn-dashboard.vercel.sh"),
 };
 
 export default function RootLayout({

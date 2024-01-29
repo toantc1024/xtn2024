@@ -12,7 +12,7 @@ import "swiper/css/autoplay";
 import images from "../assets/static/images/places";
 import Image from "next/image";
 
-export default () => {
+const Gallery = () => {
   return (
     <div className="flex">
       <Swiper
@@ -39,10 +39,12 @@ export default () => {
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-            <Image {...image} />
+            <Image {...image} key={index} alt={`Kieng Phuoc ${index}`} />
           </SwiperSlide>
         ))}
       </Swiper>
     </div>
   );
 };
+
+export default Gallery;

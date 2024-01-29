@@ -25,13 +25,13 @@ const Intro = () => {
 
             <div>
               <p className="text-xl md:text-2xl  m-2">
-                "Quê tôi ở tận miền tây
+                {"Quê tôi ở tận miền tây"}
                 <br />
-                Mênh mông đồng lúa cò bay đầy trời
+                {"Mênh mông đồng lúa cò bay đầy trời"}
                 <br />
-                Đất lành chim đậu khắp nơi
+                {"Đất lành chim đậu khắp nơi"}
                 <br />
-                Mời anh mời chị đến chơi quê nhà."
+                {"Mời anh mời chị đến chơi quê nhà."}
               </p>
             </div>
           </div>

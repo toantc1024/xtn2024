@@ -39,9 +39,9 @@ const Footer = () => {
       </span>
 
       <ul class="flex justify-center mt-5 space-x-5">
-        {social_media.map(({ icon, link }) => {
+        {social_media.map(({ icon, link }, index) => {
           return (
-            <li>
+            <li key={index}>
               <a
                 target="_blank"
                 href={link}
