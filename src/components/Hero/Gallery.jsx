@@ -2,50 +2,32 @@ import React from "react";
 import { FaImage, FaLocationDot, FaQuoteLeft } from "react-icons/fa6";
 import SectionWrapper from "../SectionWrapper";
 import { MdOutlineHistoryEdu } from "react-icons/md";
-import imgg from "../assets/static/images/36_big.jpg";
+import places from "../assets/static/images/places";
 import Image from "next/image";
 import ImageCard from "./ImageCard";
 
 const info_data = [
   {
-    image: "https://i.imgur.com/5yeBVeM.jpeg",
-    title: "Địa lý",
+    image: places[0].src,
+    title: "Đền thờ tại UBND Xã Kiểng Phước",
     content:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad amet architecto praesentium saepe est perspiciatis repudiandae ipsam iure similique? Optio totam praesentium nemo mollitia illum eius aliquam quis beatae ea?",
   },
   {
-    image: "https://i.imgur.com/5yeBVeM.jpeg",
-    title: "Địa lý",
+    image: places[1].src,
+    title: "Ủy ban nhân dân Xã Kiểng Phước",
     content:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad amet architecto praesentium saepe est perspiciatis repudiandae ipsam iure similique? Optio totam praesentium nemo mollitia illum eius aliquam quis beatae ea?",
   },
   {
-    image: "https://i.imgur.com/5yeBVeM.jpeg",
-    title: "Địa lý",
+    image: places[8].src,
+    title: "Trường THCS Thái Văn Nam",
     content:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad amet architecto praesentium saepe est perspiciatis repudiandae ipsam iure similique? Optio totam praesentium nemo mollitia illum eius aliquam quis beatae ea?",
   },
   {
-    image: "https://i.imgur.com/5yeBVeM.jpeg",
-    title: "Địa lý",
-    content:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad amet architecto praesentium saepe est perspiciatis repudiandae ipsam iure similique? Optio totam praesentium nemo mollitia illum eius aliquam quis beatae ea?",
-  },
-  {
-    image: "https://i.imgur.com/5yeBVeM.jpeg",
-    title: "Địa lý",
-    content:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad amet architecto praesentium saepe est perspiciatis repudiandae ipsam iure similique? Optio totam praesentium nemo mollitia illum eius aliquam quis beatae ea?",
-  },
-  {
-    image: "https://i.imgur.com/5yeBVeM.jpeg",
-    title: "Địa lý",
-    content:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad amet architecto praesentium saepe est perspiciatis repudiandae ipsam iure similique? Optio totam praesentium nemo mollitia illum eius aliquam quis beatae ea?",
-  },
-  {
-    image: "https://i.imgur.com/5yeBVeM.jpeg",
-    title: "Địa lý",
+    image: places[9].src,
+    title: "Hưng Kiểng Tự",
     content:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad amet architecto praesentium saepe est perspiciatis repudiandae ipsam iure similique? Optio totam praesentium nemo mollitia illum eius aliquam quis beatae ea?",
   },
@@ -56,7 +38,7 @@ const History = () => {
     <SectionWrapper
       info={{ id: "gallery" }}
       style={
-        "relative bg-gradient-to-b from-orange-500 to-red-500  flex py-8 justify-center gap-4"
+        "relative bg-gradient-to-b from-orange-500 to-red-500  flex py-8 justify-center gap-4 h-auto items-center"
       }
     >
       <div className="w-full h-full flex flex-col gap-12 items-center justify-center z-[1]">

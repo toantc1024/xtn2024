@@ -4,6 +4,8 @@ import SectionWrapper from "../SectionWrapper";
 import { MdOutlineHistoryEdu } from "react-icons/md";
 import imgg from "../assets/static/images/36_big.jpg";
 import Image from "next/image";
+import { TbSquare0Filled } from "react-icons/tb";
+import { PiNewspaper } from "react-icons/pi";
 const Section = ({ image, title, content, date, direction, icon }) => {
   return (
     <div>
@@ -66,7 +68,7 @@ const Section = ({ image, title, content, date, direction, icon }) => {
             </div>
           </div>
         </div>
-        <div class="absolute flex items-center justify-center w-8 h-8 transform -translate-x-1/2 -translate-y-4 bg-orange-500 rounded-full dark:bg-gray-700 left-1/2 lg:translate-y-[3px]">
+        <div class="absolute flex text-white items-center justify-center w-8 h-8 transform -translate-x-1/2 -translate-y-4 bg-orange-500 rounded-full dark:bg-gray-700 left-1/2 lg:translate-y-[3px]">
           {icon}
         </div>
       </div>
@@ -78,7 +80,7 @@ const data = [
     // image: imgg,
     title:
       "CHI BỘ RA ĐỜI LÃNH ĐẠO NHÂN DÂN ĐẤU TRANH CHÍNH QUYỀN VỀ TAY NHÂN DÂN",
-    icon: <FaNumber />,
+    icon: <PiNewspaper />,
     content:
       "Việt Nam, tên chính thức là Cộng hòa Xã hội chủ nghĩa Việt Nam, là một quốc gia nằm ở phía đông bán đảo Đông Dương thuộc khu vực Đông Nam Á.",
     date: "Mốc 1930-1945",

@@ -2,7 +2,7 @@ import React from "react";
 
 const ImageCard = ({ image, content, title }) => {
   return (
-    <div class="w-80 bg-white p-3">
+    <div class="w-80 bg-white p-3 rounded-xl">
       <img class="h-52 w-full object-cover" src={image} />
       <p className="font-light py-2">{title}</p>
       {/* <ul class="mt-3 flex flex-wrap">
