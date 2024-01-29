@@ -8,7 +8,7 @@ const Intro = () => {
     <>
       <SectionWrapper
         style={
-          "flex flex-col justify-between gap-12 py-8 pt-64 md:pt-32 bg-white"
+          "flex flex-col justify-between gap-12 py-8 pt-24 md:pt-32 bg-white"
         }
         info={{
           background:
