@@ -33,7 +33,7 @@ const data = [
   {
     icon: <FaLeaf className="text-emerald-400" />,
     title: <span className="text-emerald-400">Điều kiện tự nhiên</span>,
-    content: "Vùng đất màu mở, thuận lợi cho vi",
+    content: "Một nơi có đất đai màu mở, không khí trong lành.",
   },
 ];
 
