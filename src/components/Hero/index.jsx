@@ -28,12 +28,13 @@ const data = [
     icon: <FaMapMarkedAlt className="text-orange-400" />,
     title: <span className="text-orange-400">Vị trí địa lý</span>,
     content:
-      "Kiểng Phước là một xã thuộc huyện Gò Công Đông, tỉnh Tiền Giang, Việt Nam. Xã có diện tích 40,39 km², dân số năm 2010 là 15.384 người[2], mật độ dân số đạt 381 người/km². ",
+      "Kiểng Phước là một xã thuộc huyện Gò Công Đông, tỉnh Tiền Giang, Việt Nam. Xã có diện tích 40,39 km², dân số năm 2010 là 15.384 người, mật độ dân số đạt 381 người/km². ",
   },
   {
     icon: <FaLeaf className="text-emerald-400" />,
     title: <span className="text-emerald-400">Điều kiện tự nhiên</span>,
-    content: "Một nơi có đất đai màu mở, không khí trong lành.",
+    content:
+      "Một nơi có đất đai tươi tốt, màu mỡ, không khí trong lành. Điều kiện tốt cho trồng các loại cây theo mùa.",
   },
 ];
 
@@ -46,7 +47,7 @@ const Hero = () => {
           "relative bg-gradient-to-b from-orange-500  to-orange-400 flex py-8 justify-center gap-4"
         }
       >
-        <div className="w-full h-full flex flex-col gap-12 items-center justify-center z-[1]">
+        <div classNae="w-full h-full flex flex-col gap-12 items-center justify-center z-[1]">
           <h2 className="text-4xl md:text-8xl text-white">Thông tin</h2>
 
           <div className="w-full flex justify-center items-center gap-4  px-8">
