@@ -44,13 +44,13 @@ const Hero = () => {
       <SectionWrapper
         info={{ id: "info" }}
         style={
-          "relative bg-gradient-to-b from-orange-500  to-orange-400 flex py-8 justify-center gap-4"
+          "relative bg-gradient-to-b from-orange-500  to-orange-400 flex py-8 justify-center gap-4 items-center"
         }
       >
-        <div classNae="w-full h-full flex flex-col gap-12 items-center justify-center z-[1]">
+        <div className="w-full h-full flex flex-col gap-8 items-center justify-center z-[1]">
           <h2 className="text-4xl md:text-8xl text-white">Thông tin</h2>
 
-          <div className="w-full flex justify-center items-center gap-4  px-8">
+          <div className="w-full flex justify-center items-center gap-4    px-8">
             <span className="text-xl md:text-2xl  text-orange-400 p-4 rounded-full bg-white shadow-lg">
               <FaLocationDot />
             </span>
